@@ -13,7 +13,10 @@ export default function Typer() {
 
     return () => {
       t.kill()
-      ref.current!.innerHTML = ''
+
+      if (ref.current) {
+        ref.current.innerHTML = ''
+      }
     }
   }, [])
 
