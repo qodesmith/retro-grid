@@ -4,7 +4,7 @@ import typer from 'typer-js'
 import 'typer-js/dist/typer.min.css'
 import './typer.scss'
 
-export default function Typer() {
+export function Typer() {
   const ref = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -23,6 +23,7 @@ export default function Typer() {
   return <div ref={ref} className="typer-target" />
 }
 
+// biome-ignore lint/suspicious/noExplicitAny: Typer.js doesn't have TS types (yet)
 function typeMessage(t: any) {
   t.line()
     .pause(1500)

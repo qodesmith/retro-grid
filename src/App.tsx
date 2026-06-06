@@ -1,13 +1,14 @@
-import {useMemo} from 'react'
 import {getRandomNumber} from '@qodestack/utils'
-import Typer from './Typer'
+import {useMemo} from 'react'
+
+import {Typer} from './Typer'
 import {pct, px} from './utils'
 import './App.scss'
 
 const NUM_OF_STARS = 1500
 
 // https://codepen.io/jackphilippi/pen/LjezQX
-export default function App() {
+export function App() {
   const starsArray = useMemo(() => {
     return Array.from({length: NUM_OF_STARS}).map((_, i) => {
       /**
@@ -16,9 +17,11 @@ export default function App() {
        */
       const top = pct(getRandomNumber(0, 100_000) / 1000)
       const left = pct(getRandomNumber(0, 100_000) / 1000)
-      
+
       const opacity =
-        (getRandomNumber(0, 15) ? getRandomNumber(15, 30) : getRandomNumber(50, 100)) / 100
+        (getRandomNumber(0, 15)
+          ? getRandomNumber(15, 30)
+          : getRandomNumber(50, 100)) / 100
       const style: Record<string, string | number> = {left, top, opacity}
 
       if (opacity > 0.85 && !getRandomNumber(0, 2)) {
@@ -33,6 +36,7 @@ export default function App() {
           'white 0 0 10px,white 0 0 10px,white 0 0 10px,white 0 0 10px'
       }
 
+      // biome-ignore lint/suspicious/noArrayIndexKey: it's ok here
       return <div key={i} className="star" style={style} />
     })
   }, [])
