@@ -5,19 +5,19 @@
     "": {
       "name": "retro-grid",
       "dependencies": {
-        "react": "^19.2.7",
-        "react-dom": "^19.2.7",
+        "react": "latest",
+        "react-dom": "latest",
       },
       "devDependencies": {
-        "@qodestack/biome-config": "^2.4.14",
-        "@qodestack/utils": "^2.29.0",
-        "@types/react": "^19.2.17",
-        "@types/react-dom": "^19.2.3",
-        "@vitejs/plugin-react": "^6.0.2",
-        "sass": "^1.100.0",
-        "typer-js": "^5.5.3",
-        "typescript": "^6.0.3",
-        "vite": "^8.0.16",
+        "@qodestack/biome-config": "latest",
+        "@qodestack/utils": "latest",
+        "@types/react": "latest",
+        "@types/react-dom": "latest",
+        "@vitejs/plugin-react": "latest",
+        "sass": "latest",
+        "typer-js": "latest",
+        "typescript": "latest",
+        "vite": "latest",
       },
     },
   },
@@ -80,7 +80,7 @@
 
     "@qodestack/biome-config": ["@qodestack/biome-config@2.4.14", "", { "dependencies": { "@biomejs/biome": "2.4.15", "gradient-string": "^3.0.0", "jsonc-parser": "^3.3.1", "picocolors": "^1.1.1" }, "bin": { "biomeInit": "src/cli.mjs" } }, "sha512-OkjJ4ErDmj9zPXbAr+iOGnBoWoHNADudWaapOCPLLet38YxQt08ULRNdYetXVeY4NxrZx3gvlD1onCxxEHcJQA=="],
 
-    "@qodestack/utils": ["@qodestack/utils@2.29.0", "", { "peerDependencies": { "typescript": "^6.0.3" } }, "sha512-OBpiV7sM8vXXwIosq1WtZ73kIvAaN6LWmCiVKXBIXQrkZkWkB2qi+FzNlZUyVsH1DTVzOpiosExS9MmXDuHv+g=="],
+    "@qodestack/utils": ["@qodestack/utils@3.0.0", "", { "peerDependencies": { "typescript": "^6.0.3" } }, "sha512-mW7nKwiJAp2CAuzsl7cU5vKoj0Mky2qamAeEwHVux9bSPxq3ox9QNnznGvzz6ZGdJxNDUMXGMhhdr/sP1PwWYA=="],
 
     "@rolldown/binding-android-arm64": ["@rolldown/binding-android-arm64@1.0.3", "", { "os": "android", "cpu": "arm64" }, "sha512-454rs7jHngixp/NMxd5srYD57OnzSlZ/eFTETjORQHLwJG1lRtmNOJcBerZlfu4GjKqeq8aCCIQrMdHyhI51Hw=="],
 

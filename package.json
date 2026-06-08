@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@qodestack/biome-config": "^2.4.14",
-    "@qodestack/utils": "^2.29.0",
+    "@qodestack/utils": "^3.0.0",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.2",
